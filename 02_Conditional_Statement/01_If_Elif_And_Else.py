@@ -1,4 +1,4 @@
-#Traffic light programm
+#Traffic light programm by using conditional statements
 light = input("Enter colour of light:")
 
 if(light == "red"):
