@@ -1,1 +1,1 @@
-I want to learn django after python
+I want to learn django after python and then create a project
