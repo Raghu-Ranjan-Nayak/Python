@@ -24,7 +24,7 @@
 
 #Write a function which find the line inwhich learning woard is exist
 def Check_the_line():
-    word ="Learning"
+    word ="learning"
     line_no = 1
     data = True
     with open("07_File_Input_&_Output/Practice.txt","r") as f:
@@ -32,7 +32,11 @@ def Check_the_line():
             data = f.readline()
             if(word in data):
                 print(line_no)
+                return
             line_no += 1
+    return -1
+
+Check_the_line()
 
 
 
