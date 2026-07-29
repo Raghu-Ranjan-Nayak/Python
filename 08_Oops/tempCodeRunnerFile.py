@@ -1,1 +1,0 @@
-print(s1.name,s1.mark)
