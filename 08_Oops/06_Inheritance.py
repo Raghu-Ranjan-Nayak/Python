@@ -31,3 +31,22 @@ class fortuner(Toyotacar):
         self.type = type
 car1 = fortuner("petrol")
 car1.stop()
+
+#This inheritance is called multiple inheritance
+class Car:
+    @staticmethod
+    def start():
+        print("car started")
+    @staticmethod
+    def stop():
+        print("car stoped")
+class Toyotacar:
+    @staticmethod
+    def brand():
+        print("pulse")
+class Fortuner(Car,Toyotacar):
+    def __init__(self,type):
+        self.type = type
+car1 = Fortuner("petrol")
+car1.brand()
+car1.start()
