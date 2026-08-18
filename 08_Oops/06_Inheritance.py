@@ -1,4 +1,5 @@
 #Use properties and methods of a car class by inheritance
+#This inheritance is called single inheritance
 class Car:
     @staticmethod
     def start():
