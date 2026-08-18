@@ -14,3 +14,20 @@ car1 = Toyotacar("fortuner")
 car2 = Toyotacar("prius")
 
 print(car1.start())
+
+#This inheritance is called multi-level inheritance
+class Car:
+    @staticmethod
+    def start():
+        print("car started")
+    @staticmethod
+    def stop():
+        print("car stoped")
+class Toyotacar(Car):
+    def __init__(self,brand):
+        self.brand = brand
+class fortuner(Toyotacar):
+    def __init__(self,type):
+        self.type = type
+car1 = fortuner("petrol")
+car1.stop()
